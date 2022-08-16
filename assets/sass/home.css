@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#nav-area {
+  background-color: black;
+}
+#nav-area img {
+  width: 150px;
+  height: 80px;
+}
+#nav-area .my-navbar {
+  background-color: black !important;
+  width: 415px;
+  position: absolute;
+  right: 0;
+  top: 12px;
+}
+#nav-area .my-navbar li:hover {
+  background-color: cadetblue;
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+}
+#nav-area .my-navbar li:hover a {
+  color: rgb(174, 20, 20);
+}
+#nav-area .my-navbar a {
+  color: white;
+}
+
+#rm-club {
+  background-color: blueviolet;
+  height: 420px;
+}
+#rm-club .about-team {
+  width: 445px;
+  height: 325px;
+  position: absolute;
+  top: 50px;
+}
+#rm-club .about-team .button {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 130px;
+  height: 35px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 6px;
+  font-size: 15px;
+  background-color: rgb(161, 92, 8);
+  text-decoration: none;
+}
+#rm-club .about-team .button:hover {
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 20px;
+  padding-top: 8px;
+  background-color: darkgoldenrod;
+}
+#rm-club .about-team .button:hover a {
+  color: blue;
+}
+#rm-club .about-team a {
+  text-decoration: none;
+  color: white;
+}
+#rm-club .club-image {
+  overflow: hidden;
+}
+#rm-club .club-image img {
+  position: absolute;
+  top: 50px;
+  width: 640px;
+  height: 325px;
+  border-radius: 10px;
+}
+#rm-club .club-image img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+#players {
+  height: 550px;
+  background-color: blueviolet;
+}
+#players h3 {
+  margin-top: 50px;
+}
+#players .player-pictrue {
+  width: 360px;
+  height: 200px;
+  margin-top: 20px;
+}
+#players .player-pictrue img {
+  width: 360px;
+  height: 200px;
+  border-radius: 5px;
+}
+#players .player-pictrue img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  border-radius: 12px;
+}
+#players .player-pictrue h5 {
+  margin-top: 20px;
+}
+#players .player-pictrue .button {
+  width: 130px;
+  height: 35px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 6px;
+  font-size: 15px;
+  background-color: rgb(161, 92, 8);
+  text-decoration: none;
+}
+#players .player-pictrue .button:hover {
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 20px;
+  padding-top: 8px;
+  background-color: darkgoldenrod;
+}
+#players .player-pictrue .button:hover a {
+  color: blue;
+}
+#players .player-pictrue a {
+  text-decoration: none;
+  color: white;
+}
+
+#contact-about {
+  background-color: black;
+}
+#contact-about h4 {
+  margin-top: 50px;
+  color: white;
+}
+#contact-about .calendar {
+  margin-top: 30px;
+  display: flex;
+}
+#contact-about .calendar .month {
+  width: 45px;
+  height: 45px;
+  border-radius: 7px;
+  text-align: center;
+  background-color: lightcyan;
+}
+#contact-about .calendar .info {
+  color: white;
+}
+#contact-about .about {
+  margin-top: 30px;
+}
+#contact-about .about p {
+  color: white;
+}
+#contact-about .connect {
+  margin-left: 70px;
+}
+#contact-about .sayt-logo {
+  margin-top: 30px;
+  display: flex;
+}
+#contact-about .sayt-logo img {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+}
+#contact-about .sayt-logo img:hover {
+  width: 30px;
+  height: 30px;
+}
+#contact-about .sayt-logo h6 {
+  margin-left: 20px;
+  color: white;
+}
+#contact-about .sayt-logo h6 a {
+  text-decoration: none;
+  color: white;
+}
+
+#copyright p {
+  text-align: center;
+}/*# sourceMappingURL=home.css.map */

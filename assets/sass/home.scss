@@ -1,0 +1,235 @@
+@mixin base-button {
+    width: 130px;
+    height: 35px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 6px;
+    font-size: 15px;
+    background-color: rgb(161, 92, 8);
+    text-decoration: none;
+}
+
+@mixin base-a {
+    text-decoration: none;
+    color: white;
+
+}
+@mixin hover {
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 20px;
+    padding-top: 8px;
+    background-color:darkgoldenrod;
+    
+}
+@mixin hover-a {
+    color:blue;
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: font1;
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+@font-face {
+    font-family: font2;
+    src: url(../fonts/AbrilFatface-Regular.ttf);
+}
+
+.row {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#nav-area {
+    background-color: black;
+
+    img {
+        width: 150px;
+        height: 80px;
+    }
+
+    .my-navbar {
+        background-color: black !important;
+        width: 415px;
+        position: absolute;
+        right: 0;
+        top: 12px;
+        li:hover{
+           background-color: cadetblue;
+           border-radius: 10px;
+           width: auto;
+           height: auto;
+        }
+        li:hover a{
+            color: rgb(174, 20, 20);
+        }
+        a {
+            color: white;
+        }
+    }
+
+}
+
+#rm-club {
+    background-color: blueviolet;
+    height: 420px;
+
+    .about-team {
+        width: 445px;
+        height: 325px;
+        position: absolute;
+        top: 50px;
+        h3{
+            font-family:font2;
+        }
+
+        .button {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            @include base-button
+        }
+        .button:hover{
+            @include hover
+        }
+        .button:hover a{
+            @include hover-a 
+        }
+        a {
+            @include base-a
+        }
+
+    }
+
+    .club-image {
+        overflow: hidden;
+
+      img{
+        position: absolute;
+        top: 50px;
+        width: 640px;
+        height: 325px;
+        border-radius: 10px;
+        &:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+      }
+    }
+}
+
+#players {
+    height: 550px;
+    background-color: blueviolet;
+
+    h3 {
+        margin-top: 50px;
+    }
+
+    .player-pictrue {
+        width: 360px;
+        height: 200px;
+        margin-top: 20px;
+       
+        img {
+            width: 360px;
+            height: 200px;
+            border-radius: 5px;
+           
+            &:hover{
+                transform: scale(1.1);
+                transition: .5s;
+                border-radius: 12px;
+            }
+           
+        }
+
+        h5 {
+            margin-top: 20px;
+            font-family: font1;
+        }
+
+        .button {
+            @include base-button
+        }
+        .button:hover{
+            @include hover
+        }
+        .button:hover a{
+            @include hover-a 
+        }
+
+        a {
+            @include base-a
+        }
+    }
+}
+
+#contact-about{
+    background-color: black;
+  
+
+    h4{
+        margin-top: 50px;
+        color: white;
+    }
+    .calendar{
+        margin-top: 30px;
+        display: flex;
+        .month {
+            
+            width: 45px;
+            height: 45px;
+            border-radius: 7px;
+            text-align: center;
+            background-color:lightcyan;
+        }
+        .info{
+            color: white;
+        }
+
+    }
+    .about{
+        margin-top: 30px;
+        p{
+            color: white;
+        }
+    }
+    .connect{
+       margin-left: 70px;
+    }
+    .sayt-logo{
+        margin-top: 30px;
+        display: flex;
+       
+        img{
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+            &:hover{
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        h6{
+            margin-left: 20px;
+            color: white;
+            a{
+                @include base-a
+            }
+        }
+    }
+}
+#copyright{
+    p{
+        text-align: center;
+    }
+}
